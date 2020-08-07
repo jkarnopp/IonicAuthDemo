@@ -12,7 +12,11 @@ import { AuthResponse } from  './auth-response';
 })
 export class AuthService {
 
-  AUTH_SERVER_URL:  string  =  'http://localhost:3000';
+  // Node Express Server
+  //AUTH_SERVER_URL:  string  =  'http://localhost:3000';
+
+  // ASP.NET Core App
+  AUTH_SERVER_URL:  string  =  'https://localhost:44372/api/account';
 authSubject  =  new  BehaviorSubject(false);
 
   constructor(private  httpClient:  HttpClient, private  storage:  Storage) { }
